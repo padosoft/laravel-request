@@ -53,7 +53,7 @@ class RequestHelper
     public static function isValidUploadFile(string $uploadField, array $arrMimeType = array(), Request $request) : bool
     {
         $uploadedFile = self::getFileSafe($uploadField, $request);
-        if ($uploadedFile === null) {
+        if ($uploadedFile === null || !is_a($uploadedFile, UploadedFile::class)) {
             return false;
         }
 
@@ -79,9 +79,8 @@ class RequestHelper
     public static function getFileSafe(
         string $uploadField,
         Request $request
-    )
-    {
-        if (!$request || $uploadField === null || $uploadField=='') {
+    ) {
+        if (!$request || $uploadField === null || $uploadField == '') {
             return null;
         }
 
