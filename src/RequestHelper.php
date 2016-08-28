@@ -53,6 +53,7 @@ class RequestHelper
     public static function isValidUploadFile(string $uploadField, array $arrMimeType = array(), Request $request) : bool
     {
         $uploadedFile = self::getFileSafe($uploadField, $request);
+
         if (!is_a($uploadedFile, '\Illuminate\Http\UploadedFile')) {
             return false;
         }
