@@ -1,4 +1,4 @@
-# Generate slugs when saving Eloquent models
+# Laravel Package to interact with Illuminate Request and Files Upload.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/padosoft/laravel-request.svg?style=flat-square)](https://packagist.org/packages/padosoft/laravel-request)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
