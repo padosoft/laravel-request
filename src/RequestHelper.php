@@ -54,7 +54,7 @@ class RequestHelper
     {
         $uploadedFile = self::getFileSafe($uploadField, $request);
 
-        if (!is_a($uploadedFile, '\Illuminate\Http\UploadedFile')) {
+        if (!is_a($uploadedFile, UploadedFile::class)) {
             return false;
         }
 
