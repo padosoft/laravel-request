@@ -5,6 +5,7 @@ namespace Padosoft\Laravel\Request\Test;
 use Padosoft\Laravel\Request\UploadedFileHelper;
 use Padosoft\Test\traits\ExceptionTestable;
 use Padosoft\Test\traits\FileSystemTestable;
+use Padosoft\Laravel\Request\UploadedFileTestable;
 
 class UploadedFileHelperTest extends \PHPUnit_Framework_TestCase
 {

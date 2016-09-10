@@ -10,6 +10,7 @@ use Illuminate\Foundation\Application;
 use Padosoft\Laravel\Request\RequestHelper;
 use Padosoft\Test\traits\ExceptionTestable;
 use Padosoft\Test\traits\FileSystemTestable;
+use Padosoft\Laravel\Request\UploadedFileTestable;
 
 class RequestHelperTest extends Orchestra
 {
