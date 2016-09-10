@@ -81,7 +81,7 @@ class RequestHelper
         string $uploadField,
         Request $request
     ) {
-        if (!$request || $uploadField === null || $uploadField == '') {
+        if (!$request) {
             return null;
         }
 

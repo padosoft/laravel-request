@@ -2,6 +2,10 @@
 
 All Notable changes to `laravel-request` will be documented in this file
 
+## 1.1.2 - 2016-09-10
+### CHANGE
+- Small refactor of RequestHelper::getFileSafe to reduce Cyclomatyc Complexity.
+
 ## 1.1.1 - 2016-09-10
 ### CHANGE
 - Add a PHPUnit abstract method in UploadedFileTestable trait.
