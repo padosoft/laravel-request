@@ -12,6 +12,16 @@ use Illuminate\Http\UploadedFile;
 trait UploadedFileTestable
 {
     /**
+     * Implemented in PHPUnit
+     * Asserts that a file exists.
+     *
+     * @param string $filename
+     * @param string $message
+     *
+     */
+    abstract public static function assertFileExists($filename, $message = '');
+
+    /**
      * Create an instance of Illuminate\Http\UploadedFile for testing (param test=true).
      * Before creating UploadedFile class check if file exists with assertFileExists($fullPath).
      * @param string $fullPath
