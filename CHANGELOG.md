@@ -2,6 +2,10 @@
 
 All Notable changes to `laravel-request` will be documented in this file
 
+## 1.1.3 - 2016-09-11
+### CHANGE
+- update padosoft/io to 1.6.0, padosoft/test 0.2.2, laravel/framework v5.3.8 and other dependencies.
+
 ## 1.1.2 - 2016-09-10
 ### CHANGE
 - Small refactor of RequestHelper::getFileSafe to reduce Cyclomatyc Complexity.
