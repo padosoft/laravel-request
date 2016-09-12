@@ -2,6 +2,10 @@
 
 All Notable changes to `laravel-request` will be documented in this file
 
+## 1.2.1 - 2016-09-12
+### CHANGES
+- Update doc bloc and remove unused namespace in RequestTestable.php
+
 ## 1.2.0 - 2016-09-12
 ### ADD
 - Add new RequestTestable trait for easy testing request and upload.
