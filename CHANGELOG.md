@@ -2,11 +2,13 @@
 
 All Notable changes to `laravel-request` will be documented in this file
 
-## 1.2.0 - 2016-09-12
-### ADD
-- Add new RequestTestable trait for easy testing request and upload.
+#
+## 1.1.3 - 2016-09-11# 1.2.0 - 2016-09-12
+                     ### ADD
+                     - Add new RequestTestable trait for easy testing request and upload.
+                     ### CHANGES
+                     - Update laravel/framework v5.3.9.
 
-## 1.1.3 - 2016-09-11
 ### CHANGE
 - update padosoft/io to 1.6.0, padosoft/test 0.2.2, laravel/framework v5.3.8 and other dependencies.
 
