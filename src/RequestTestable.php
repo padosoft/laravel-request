@@ -3,7 +3,6 @@
 namespace Padosoft\Laravel\Request;
 
 use Illuminate\Http\Request;
-use Illuminate\Http\UploadedFile;
 
 /**
  * Class RequestTestable
@@ -82,7 +81,8 @@ trait RequestTestable
     /**
      * Get request for upload file and bind.
      * Usefull for testing upload.
-     * @param UploadedFile[] $arrUploadedFiles are in the form ['image' => $UploadFile1, 'file' => $UploadFile2,....]
+     * @param array $arrUploadedFiles are in the form ['image' => $UploadFile1, 'file' => $UploadFile2,....]
+     * where $UploadFile1 and $uploadFile2 are istance of \Illuminate\Http\UploadedFile.
      * @return \Illuminate\Http\Request
      */
     public function getRequestAndBindItForUploadTest(array $arrUploadedFiles) : \Illuminate\Http\Request
