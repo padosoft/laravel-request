@@ -13,7 +13,7 @@ use Illuminate\Http\UploadedFile;
 trait RequestTestable
 {
     /**
-     * Create an instance of Illuminate\Http\Request for testing.
+     * Create an instance of \Illuminate\Http\Request for testing.
      * @param string $uri
      * @param string $method
      * @param array $parameters
@@ -21,7 +21,7 @@ trait RequestTestable
      * @param array $files
      * @param array $server
      * @param null $content
-     * @return Request
+     * @return \Illuminate\Http\Request
      */
     public function getRequestForTest(
         $uri = '/',
@@ -31,7 +31,7 @@ trait RequestTestable
         array $files = [],
         array $server = [],
         $content = null
-    ) : Request
+    ) : \Illuminate\Http\Request
     {
         //create request
         return Request::create($uri, $method, $parameters, $cookies, $files, $server, $content);
@@ -46,7 +46,7 @@ trait RequestTestable
      * @param array $files
      * @param array $server
      * @param null $content
-     * @return Request
+     * @return \Illuminate\Http\Request
      */
     public function getRequestAndBindItForTest(
         $uri = '/',
@@ -56,7 +56,7 @@ trait RequestTestable
         array $files = [],
         array $server = [],
         $content = null
-    ) : Request
+    ) : \Illuminate\Http\Request
     {
         //create request
         $request = $this->getRequestForTest($uri, $method, $parameters, $cookies, $files, $server, $content);
@@ -69,10 +69,9 @@ trait RequestTestable
     }
 
     /**
-     * @param Request $request
-     * @return Request
+     * @param \Illuminate\Http\Request $request
      */
-    public function bindRequestForTest(Request $request): Request
+    public function bindRequestForTest(\Illuminate\Http\Request $request)
     {
         //bind request istance to this class
         $this->app->instance(Request::class, $request);
@@ -84,9 +83,9 @@ trait RequestTestable
      * Get request for upload file and bind.
      * Usefull for testing upload.
      * @param UploadedFile[] $arrUploadedFiles are in the form ['image' => $UploadFile1, 'file' => $UploadFile2,....]
-     * @return Request
+     * @return \Illuminate\Http\Request
      */
-    public function getRequestAndBindItForUploadTest(array $arrUploadedFiles) : Request
+    public function getRequestAndBindItForUploadTest(array $arrUploadedFiles) : \Illuminate\Http\Request
     {
         //create request with uploaded files
         return $this->getRequestAndBindItForTest('/', 'GET', [], [], $arrUploadedFiles);
