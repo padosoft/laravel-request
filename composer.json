@@ -19,15 +19,15 @@
     ],
     "require": {
         "php" : ">=7.0.0",
-        "illuminate/support": "^5.0",
-        "illuminate/http": "^5.0",
+        "illuminate/support": "^5.7",
+        "illuminate/http": "^5.7",
         "padosoft/io": "^1.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^3.2",
-        "phpunit/phpunit": "^5.0",
+        "orchestra/testbench": "^3.7",
+        "phpunit/phpunit": "^7.0",
         "mockery/mockery": "^0.9.5",
-        "padosoft/test": "~0.2"
+        "padosoft/test": "^1.0.1"
     },
     "autoload": {
         "psr-4": {

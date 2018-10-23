@@ -7,7 +7,7 @@ use Padosoft\Test\traits\ExceptionTestable;
 use Padosoft\Test\traits\FileSystemTestable;
 use Padosoft\Laravel\Request\UploadedFileTestable;
 
-class UploadedFileHelperTest extends \PHPUnit_Framework_TestCase
+class UploadedFileHelperTest extends \phpunit\Framework\TestCase
 {
     use ExceptionTestable, FileSystemTestable, UploadedFileTestable;
 

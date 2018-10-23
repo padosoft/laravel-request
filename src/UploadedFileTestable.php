@@ -19,7 +19,7 @@ trait UploadedFileTestable
      * @param string $message
      *
      */
-    abstract public static function assertFileExists($filename, $message = '');
+    abstract public static function assertFileExists(string $filename, string $message = ''): void;
 
     /**
      * Create an instance of Illuminate\Http\UploadedFile for testing (param test=true).
