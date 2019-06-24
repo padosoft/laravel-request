@@ -8,6 +8,8 @@ php:
 env:
   matrix:
     - COMPOSER_FLAGS=""
+    allow_failures:
+    - php: 7.1
 
 before_script:
   - travis_retry composer self-update
