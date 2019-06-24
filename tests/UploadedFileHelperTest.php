@@ -11,13 +11,13 @@ class UploadedFileHelperTest extends \phpunit\Framework\TestCase
 {
     use ExceptionTestable, FileSystemTestable, UploadedFileTestable;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         //init files and paths needed for tests.
         $this->initFileAndPath(__DIR__);
     }
 
-    protected function tearDown()
+    protected function tearDown() : void
     {
         //remove created path during test
         $this->removeCreatedPathDuringTest(__DIR__);

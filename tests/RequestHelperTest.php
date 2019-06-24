@@ -16,7 +16,7 @@ class RequestHelperTest extends Orchestra
 {
     use ExceptionTestable, FileSystemTestable, UploadedFileTestable;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
@@ -24,7 +24,7 @@ class RequestHelperTest extends Orchestra
         $this->initFileAndPath(__DIR__);
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         //remove created path during test
         $this->removeCreatedPathDuringTest(__DIR__);

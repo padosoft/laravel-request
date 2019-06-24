@@ -11,9 +11,9 @@ This package provides a series of class to interact with Illuminate Request and 
 
 ##Requires
   
-- php: >=7.0.0
-- illuminate/support: ^5.0
-- illuminate/http: ^5.0
+- php: >=7.1
+- illuminate/support: ^5.8
+- illuminate/http: ^5.8
 - padosoft/io: ^1.0
   
 ## Installation

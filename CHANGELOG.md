@@ -2,6 +2,11 @@
 
 All Notable changes to `laravel-request` will be documented in this file
 
+## 3.0.0 - 2019-06-24
+### CHANGES
+- Add support to Laravel 5.8
+- Update composer.json
+
 ## 2.0.0 - 2018-10-23
 ### CHANGES
 - Add support to phpunit 7.x and Laravel 5.7
