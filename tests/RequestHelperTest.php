@@ -64,7 +64,6 @@ class RequestHelperTest extends Orchestra
         $request = Request::create('/', 'GET', [], [], ['file' => $uploadedFile]);
 
         $result = RequestHelper::getFileSafe('file', $request);
-
         $this->assertInstanceOf(UploadedFile::class, $result);
         $this->assertTrue($result->isValid());
         $this->assertEquals('dummy.txt', $result->getClientOriginalName());

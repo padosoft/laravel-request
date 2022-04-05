@@ -2,8 +2,14 @@
 
 All Notable changes to `laravel-request` will be documented in this file
 
-## 2.1.0 - 2022-04-04
+## 2.3.0 - 2022-04-04
 ### CHANGES
+- Add support to Laravel 6/7/8/9
+- Update composer.json
+
+## 2.2.0 - 2019-06-24
+### CHANGES
+- Add support to Laravel 5.8
 - Update composer.json
 
 ## 2.0.0 - 2018-10-23
