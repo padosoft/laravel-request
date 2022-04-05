@@ -40,7 +40,6 @@ trait UploadedFileTestable
             $fullPath,
             pathinfo($fullPath, PATHINFO_BASENAME),
             ($mimeType === null || $mimeType == '') ? mime_content_type($fullPath) : $mimeType,
-            filesize($fullPath),
             $errorCode,
             true // true for test
         );

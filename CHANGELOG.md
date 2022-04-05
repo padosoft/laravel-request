@@ -2,6 +2,10 @@
 
 All Notable changes to `laravel-request` will be documented in this file
 
+## 2.1.0 - 2022-04-04
+### CHANGES
+- Update composer.json
+
 ## 2.0.0 - 2018-10-23
 ### CHANGES
 - Add support to phpunit 7.x and Laravel 5.7
